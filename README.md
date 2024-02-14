@@ -1,2 +1,11 @@
 # oblig1
-repository for oblig1 data1700
+
+OsloMet brukernavn: lohoa3923
+
+Github brukernavn: Longhaih
+
+Github repo URL: https://github.com/Lohaih/oblig1
+
+Fullt navn: Long Hai Hoang
+
+Kort beskrivelse av applikasjon:
