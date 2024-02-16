@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kinobilletter</title>
+    <script src="index.js"></script>
+</head>
+<style>
+    .format-text {
+        color: red;
+    }
+</style>
+<body>
+<h1>Bestilling av kinobilletter</h1>
+
+<table>
+    <tr>
+        <td>
+            <label for="film">Velg film:</label>
+        </td>
+        <td>
+            <select id="film">
+                <option>Velg film her</option>
+                <option>Film 1</option>
+                <option>Film 2</option>
+                <option>Film 3</option>
+            </select> <span id="sjekkFilm" class="format-text"></span>
+        </td>
+    </tr>
+    <tr>
+        <td><label for="antallBilletter">Antall</label></td>
+        <td><input size="1" maxlength="3" type="text" id="antallBilletter"> <span id="sjekkAntall" class="format-text"></span></td>
+    </tr>
+    <tr>
+        <td><label for="fornavn">Fornavn</label></td>
+        <td><input type="text" id="fornavn"> <span id="sjekkFornavn" class="format-text"></span></td>
+    </tr>
+    <tr>
+        <td><label for="etternavn">Etternavn</label></td>
+        <td><input type="text" id="etternavn"> <span id="sjekkEtternavn" class="format-text"></span></td>
+    </tr>
+    <tr>
+        <td><label for="telefonnr">Telefonnr</label> </td>
+        <td><input type="text" id="telefonnr"> <span id="sjekkTelefonnr" class="format-text"></span></td>
+    </tr>
+    <tr>
+        <td><label for="epost">Epost</label> </td>
+        <td><input type="email" id="epost"> <span id="sjekkEpost" class="format-text"></span></td>
+    </tr>
+</table>
+<button onclick="kjopBillett()">Kjøp billett</button>
+
+<h2>Alle billetter</h2>
+<div id="billettArray"></div>
+
+<button onclick="slettBillett()">Slett alle billettene</button>
+</body>
+</html>
