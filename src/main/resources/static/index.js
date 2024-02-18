@@ -48,12 +48,17 @@ function kjopBillett(){
         valid = false;
     }
 
-    if (telefonnr=== ""){
+    // 8 siffer for telefonnr
+    let telefonnrReq = /^\d{8}$/;
+    if (telefonnr=== "" || !telefonnrReq.test(telefonnr)) {
         document.getElementById("sjekkTelefonnr").innerText = "Oppgi et gyldig telefonnr";
         document.getElementById("telefonnr").value = "";
         valid = false;
     }
-    if (epost === "" || !epost.includes("@")){
+
+    // takk til TA som sendte regex lenke i zoom forelesning https://regexr.com/3e48o
+    let epostReq = /^\w+@([\w-]+\.)+[\w-]+$/;
+    if (epost === "" || !epostReq.test(epost)) {
         document.getElementById("sjekkEpost").innerText = "Epost er ikke gyldig eller fylt ut";
         document.getElementById("epost").value = "";
         valid = false;
